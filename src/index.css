@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.increase-btn, .decrease-btn {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.dropdown-container {
+
+    background-color: grey;
+    font-size: 20px;
+}
+.currency-dropdown {
+    color: white;
+    background-color: #93E498;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+ 
+}
+
+.currency-dropdown option {
+        color: black;
+ }
+.currency-dropdown  option:hover {
+     background-color: #ffff ;
+}

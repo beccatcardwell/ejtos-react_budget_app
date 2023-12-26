@@ -10,16 +10,20 @@ const CurrencyDropdown = () => {
             payload: event.target.value
         })
     }
+
+    const optStyles = {
+
+    }
     return (
-        <>
-            {/* <label className="input-group-text" htmlFor="currency">Currency ()</label> */}
-            <select value={currency} id="currency" name='currency' onChange={handleCurrencyChange}>
+        <div>
+            <label className="dropdown-label" htmlFor="currency">Currency:&nbsp;</label>
+            <select className="currency-dropdown" value={currency} id="currency" name='currency' onChange={handleCurrencyChange}>
                 <option value='$'>&#36; Dollar</option>
                 <option value='£'>&pound; Pound</option>
                 <option value='€'>&euro; Euro</option>
                 <option value='₹'>&#8377; Rupee</option>
             </select>
-        </>
+        </div>
     )
 }
 
